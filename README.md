@@ -14,8 +14,8 @@
 5. move file from tmp to usr/local: sudo mv spark-2.1.0-bin-hadoop2.7 /usr/local
 6. set .bashrc file to make sure export the correct SPARK_HOME and PATH   
 7. re-start the terminal to have the new PATH to take effective.
-8. modify the conf document "spark-env.sh" (copyed from spark-env.sh.template) under con
-f by add   ing/uncommend a row:
+8. modify the conf document "spark-env.sh" (copyed from spark-env.sh.template) 
+   under conf by adding/uncommend a row:
      export SPARK_LOCAL_IP="127.0.0.1"
 9. excercise Spark tutorial using the link by the current README file:
    http://spark.apache.org/docs/latest/quick-start.html 
