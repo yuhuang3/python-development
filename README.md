@@ -2,7 +2,24 @@
 
 ## Install Spark 2.0.1
 
-Download and install spark-2.1.0-bin-hadoop2.7 at: http://spark.apache.org/downloads.html
+```
+1. download location: http://spark.apache.org/downloads.html 
+2. download parameters:
+ 	- Choose a Spark release: 2.1.0(Dec 28 2016) 	
+	- Choose a package type: Pre-built for Hadoop 2.7 and later
+	- Choose a download type: Direct Download
+3. Download Spark: click on the link "spark-2.1.0-bin-haddop2.7.tgz"
+4. extract tgz file from /home/zhang/tmp directory to tem (currently directory): 
+    ~/temp$ tar -zxvf ../Downloads/spark-2.1.0-bin-hadoop2.7.tgz 
+5. move file from tmp to usr/local: sudo mv spark-2.1.0-bin-hadoop2.7 /usr/local
+6. set .bashrc file to make sure export the correct SPARK_HOME and PATH   
+7. re-start the terminal to have the new PATH to take effective.
+8. modify the conf document "spark-env.sh" (copyed from spark-env.sh.template) under con
+f by add   ing/uncommend a row:
+     export SPARK_LOCAL_IP="127.0.0.1"
+9. excercise Spark tutorial using the link by the current README file:
+   http://spark.apache.org/docs/latest/quick-start.html 
+```
 
 ## Anaconda Installation Procedure 
 
