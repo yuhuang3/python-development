@@ -11,5 +11,21 @@
 
   bash Anaconda2--4.2.0-Linux-x86_64.sh
 
+### NOTES:
 
+The following error occurs when "import matplotlib.pyplot as plt":
+
+```
+The error is:
+This application failed to start because it could not find or load the Qt platform plugin "xcb".
+Reinstalling the application may fix this problem.
+Aborted
+
+The solution is:
+go to Anaconda installation location and run the following commands:
+sudo ./conda remove qt
+sudo ./conda remove pyqt
+sudo ./conda install qt
+sudo ./conda install pyqt
+```
 
