@@ -1,5 +1,9 @@
 # Spark for Python Development
 
+## Install Spark 2.0.1
+
+Download and install spark-2.1.0-bin-hadoop2.7 at: http://spark.apache.org/downloads.html
+
 ## Anaconda Installation Procedure 
 
 ### Download and Install
@@ -31,9 +35,9 @@ sudo ./conda install qt
 sudo ./conda install pyqt
 ```
 
-### Config Anaconda for Jupiter Notebook
+### Config Anaconda for Jupyter Notebook
 
-Add the following in .bashrc:
+Add the following in .bashrc to link Spark with Jupyter notebook:
 
 ```
 export PATH="/usr/local/anaconda2/bin:$PATH"
@@ -41,5 +45,20 @@ export PYSPARK_PYTHON=/usr/local/anaconda2/bin/python
 export PYSPARK_DRIVER_PYTHON=/usr/local/anaconda2/bin/jupyter
 export PYSPARK_DRIVER_PYTHON_OPTS="notebook"
 ```
+
+### Start Spark for Python
+
+```
+pyspark
+```
+
+The Jupyter notebook server with IP http://localhost:8888/tree runs in a new Browser window.
+
+### Create Jupyter Notebook
+
+* In the Browser window, select the Files panel
+* Select Python notebook in the "New" drop-down manual
+
+A new Browser window will pop-up for running Python commands.
 
 
