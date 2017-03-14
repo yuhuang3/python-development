@@ -79,3 +79,7 @@ The Jupyter notebook server with IP http://localhost:8888/tree runs in a new Bro
 A new Browser window will pop-up for running Python commands.
 
 
+# Spark for Scala
+
+spark-shell
+
